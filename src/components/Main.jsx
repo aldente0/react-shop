@@ -104,7 +104,7 @@ export function Main() {
     useEffect(() => {
         fetch(API_URL, {
             headers: {
-                'Authorization': '225419eb-022541d6-4ac4d86b-e33371b4',
+                'Authorization': API_KEY,
             }
         }).then(response => response.json())
         .then(data => {
