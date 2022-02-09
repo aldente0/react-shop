@@ -11,4 +11,4 @@ what was done:
 
 # Getting Started with Create React App
 
-This project was bootstrapped with [Demo](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Demo](https://aldente0.github.io/react-shop/).
