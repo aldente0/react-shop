@@ -1,4 +1,4 @@
-react-movies - online catalog of movies and TV series
+react-shop - shop of skin from fortnite
 
 what was done:
 
