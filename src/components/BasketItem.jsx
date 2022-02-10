@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ShopContext } from '../context';
 
 export function BasketItem(props) {
     const {
@@ -6,15 +7,14 @@ export function BasketItem(props) {
         name,
         quantity,
         price,
-        deleteItemFromBasket,
-        incrementItem,
-        decrementItem
     } = props;
+
+    const {removeFromOrder, decrementItem, incrementItem} = useContext(ShopContext);
 
     const sumPrice = quantity * price;
 
     const handleDeleteItemFromBasket = () => {
-        deleteItemFromBasket(id);
+        removeFromOrder(id);
     };
 
     const handleDecrementItem = () => {

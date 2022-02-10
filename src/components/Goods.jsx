@@ -1,9 +1,10 @@
+import { useContext } from 'react';
 import {Good} from './Good';
+import { ShopContext } from '../context';
 
-export function Goods(props) {
-    const {goods = []} = props;
+export function Goods() {
 
-    
+    const {goods = []} = useContext(ShopContext);
 
     return (
 
@@ -13,10 +14,8 @@ export function Goods(props) {
         <div className="goods">
             {
             goods.map(good => {
-                const {
-                    id
-                } = good;
-                return <Good key={id} {...good} addToOrder={props.addToOrder}/>
+                const {id} = good;
+                return <Good key={id} {...good}/>
             })
         }
         </div>
